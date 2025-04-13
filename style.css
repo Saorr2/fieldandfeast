@@ -67,8 +67,9 @@ table {
 body{
     max-width: 485px;
     background-color: var(--soft-white);
+    color: var(--dark-charcoal);
     font-family: 'Playfair Display', serif;
-    line-height: 1.2;
+    line-height: 1;
     margin: 0 auto;
     }
 
@@ -76,12 +77,6 @@ header{
     max-width: 485px;
     text-align: center;
     background-color: var(--midnight-blue);
-    padding: 0;
-}
-
-header img{
-    width: 25%;
-    height: auto;
 }
 
 header h1{
@@ -100,10 +95,7 @@ header p{
 
 nav ul{
     display: flex;
-    justify-content: space-between;
     padding: 0.7rem;
-    margin: 0 auto;
-    width: auto;
     background-color:var(--champagne-gold);
 }
 
@@ -118,25 +110,31 @@ nav ul li a{
 
 main{
     max-width: 485px;
-    padding: 2rem 1rem 4rem;
+    padding: 3rem;
     margin: 0 auto;
     text-align: center;
     color:var(--dark-charcoal);
 }
 
 #about-us, #offerings, #gallery h2{
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     font-size: 2rem;
     text-align: left;
-    margin: 0 auto;
 }
 
-#about-us > p{
+#about-us >  p{
     text-align: left;
     line-height: 1.5rem;
-    font-size: 1rem;
-    width: 50ch;
-    color: var(--dark-charcoal);
+    padding-top: 0.5rem;
+    font-size: 0.95rem;
+    width: 48ch;
+}
+
+#gallery > p{
+    padding-top: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    text-align: left;
 }
 
 #offerings h2{
@@ -186,16 +184,6 @@ main{
 .offerings-item ul li{
     list-style-type: disc;
     margin: 0 auto;
-}
-
-#gallery > p{
-    text-align: center;
-    width: 48ch;
-    margin: 0;
-    padding-top: 0.5rem;
-    font-size: 1rem;
-    line-height: 1.3rem;
-    text-align: left;
 }
 
 .gallery-grid{
@@ -282,7 +270,7 @@ footer .social-media-links a{
     header,
     main,
     footer {
-        max-width: 685px;
+        max-width: 680px;
         margin: 0 auto;
     }
 
@@ -332,7 +320,6 @@ footer .social-media-links a{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         width: 95%;
-        min-width: 600px;
     }
 
     .gallery-grid{
@@ -394,16 +381,15 @@ footer .social-media-links a{
 
     #about-us > p,
     #gallery > p{
-        font-size: 1.12rem;
-        width: 88ch;
-        line-height: 1.6;
-        text-align: left;
+        font-size: 1.1rem;
+        width: 87ch;
+        line-height: 1.5;
     }
 
     #about-us,
     #offerings,
     #gallery h2{
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
 
     .offerings-grid{
@@ -414,7 +400,7 @@ footer .social-media-links a{
 
     .offerings-item:nth-child(3){
         grid-column: 1 / -1;
-        width: 91%;
+        width: 94%;
     }
 
     .offerings-item{
@@ -470,7 +456,7 @@ footer .social-media-links a{
     main,
     header,
     footer{
-        max-width: 1290px;
+        max-width: 1375px;
         margin: 0 auto;
     }
 
@@ -482,13 +468,8 @@ footer .social-media-links a{
         font-size: 1.4rem;
     }
 
-    header img{
-        width: 20%;
-        height: auto;
-    }
-
     nav ul{
-        gap: 19rem;
+        gap: 20rem;
     }
 
     nav ul li a{
@@ -499,16 +480,14 @@ footer .social-media-links a{
     #about-us,
     #offerings,
     #gallery h2{
-        font-size: 2.4rem; 
-        text-align: left;
+        font-size: 2.2rem; 
     }
 
     #about-us > p,
     #gallery > p{
         font-size: 1.3rem;
         width: 87ch;
-        line-height: 1.6;
-        text-align: left;
+        line-height: 1.5;
     }
 
     .offerings-grid{
@@ -519,18 +498,18 @@ footer .social-media-links a{
 
     .offerings-item:nth-child(3){
         grid-column: 1 / -1;
-        width: 86%;
+        width: 90%;
     }
 
     .offerings-item{
         padding: 1.2rem;
         border-radius: 6px;
         box-shadow: 0px 2px 6px var(--dark-charcoal);
-        width: 480px;
+        width: 513px;
     }
 
     .offerings-item h3{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     .offerings-item p,
@@ -538,13 +517,13 @@ footer .social-media-links a{
         font-size: 1.2rem;
         width: 40ch;
         line-height: 1.4;
-        width: 98%;
+        width: 100%;
     }
 
     .gallery-grid{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 3rem;
+        gap: 2.5rem;
         max-width: 1200px;
     }
 
@@ -555,7 +534,7 @@ footer .social-media-links a{
     }
 
     .gallery-item p{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-style: italic;
         line-height: 1.4;
     }
@@ -563,7 +542,6 @@ footer .social-media-links a{
     button{
         font-size: 1.3rem;
         padding: 1.2rem;
-        max-width: 1280px;
     }
 
     footer a{
